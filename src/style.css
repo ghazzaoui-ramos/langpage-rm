@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   background: #17181d; 
-  color: #9B30FF; 
+  color: #4D474F; /* Cinza escuro */
   margin: 0;
   display: flex;
   align-items: center;
@@ -18,9 +18,13 @@ body {
 
 .header {
   font-size: 20px;
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #fff; /* Vermelho vibrante */
   margin-bottom: 20px;
   font-weight: 600;
+}
+
+.header span {
+  color: #E51E18;
 }
 
 .icons {
@@ -33,7 +37,7 @@ body {
 .icon {
   width: 70px;
   height: 70px;
-  background-color: #292c35; 
+  background-color: #282F32; /* Cinza profundo */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -41,14 +45,14 @@ body {
   cursor: pointer;
 }
 
-.icon:hover{
-  box-shadow: 0px 0px 8px #9B30FF;  /* Roxo mais vibrante */
+.icon:hover {
+  box-shadow: 0px 0px 8px #E51E18; /* Vermelho vibrante */
   transform: scale(1.05);
 }
 
 .icon i {
   font-size: 40px;
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #E51E18; /* Vermelho vibrante */
   cursor: pointer;
 }
 
@@ -56,22 +60,25 @@ body {
   margin-top: 20px;
 }
 
+.titulo-port{
+  color: #aba8a8;
+}
 #meuIcone {
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #E51E18; /* Vermelho vibrante */
   font-size: 15px;
   margin-left: 5px;
 }
 
 #meuIcone:hover {
- color: #000;
+  color: #000;
 }
 
 .button {
   flex: 1; 
   padding: 15px;
-  background-color: #292c35; 
+  background-color: #282F32; /* Cinza profundo */
   border-radius: 50px;
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #E51E18; /* Vermelho vibrante */
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -80,8 +87,8 @@ body {
   text-decoration: none;
 }
 
-.button:hover{
-  box-shadow: 0px 0px 8px #9B30FF;  /* Roxo mais vibrante */
+.button:hover {
+  box-shadow: 0px 0px 8px #E51E18; /* Vermelho vibrante */
   transform: scale(1.05);
 }
 
@@ -90,17 +97,17 @@ body {
   top: 30px; 
   left: 20px; 
   padding: 10px 20px;
-  background-color: #9B30FF;  /* Roxo mais vibrante */
+  background-color: #E51E18; /* Vermelho vibrante */
   color: #000;
   text-decoration: none;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 40px;
   cursor: pointer;
 }
 
 .button.voltar:hover {
-  background-color: #b466fd;  /* Verde limão mais vibrante */
-  box-shadow: 0px 0px 8px #9B30FF;  /* Roxo mais vibrante */
+  background-color: #C0191F; /* Vermelho escuro */
+  box-shadow: 0px 0px 8px #E51E18; /* Vermelho vibrante */
   transform: scale(1.05);
 }
 
@@ -116,7 +123,7 @@ body {
 }
 
 .highlight {
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #E51E18; /* Vermelho vibrante */
 }
 
 .background-image {
@@ -126,7 +133,7 @@ body {
   transform: translateX(-50%);
   width: 100%;
   height: 100%; 
- object-fit: cover; 
+  object-fit: cover; 
   max-width: 600px;
   z-index: -1;
   opacity: 0.3;
@@ -152,8 +159,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
-  background-color: #292c35; 
-  color: #9B30FF;  /* Roxo mais vibrante */
+  background-color: #282F32; /* Cinza profundo */
+  color: #E51E18; /* Vermelho vibrante */
   font-weight: bold;
   text-align: left;
   border-radius: 8px;
@@ -162,7 +169,7 @@ body {
 }
 
 .artist-list li a:hover {
-  background-color: #b466fd;  /* Verde limão mais vibrante */
+  background-color: #C0191F; /* Vermelho escuro */
   color: #000;
 }
 
@@ -175,6 +182,7 @@ body {
 
 .gallery img {
   width: 100%;
+  height: 100%;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -215,7 +223,7 @@ body {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: red;
+  color: #E51E18; /* Vermelho vibrante */
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -223,64 +231,24 @@ body {
 
 .close:hover,
 .close:focus {
-  color: #b466fd;  /* Verde limão mais vibrante */
+  color: #C0191F; /* Vermelho escuro */
   cursor: pointer;
 }
 
-#extraYoutubeLinks a {
+#extraYoutubeLinks a, #extraInstaLinks a, #extraspotifyLinks a, #extraRedeSocialLinks a {
   display: block;
   margin-top: 10px;
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #E51E18;
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
-}
-
-#extraYoutubeLinks a:hover {
-  color: #b466fd;  /* Verde limão mais vibrante */
-}
-
-#extraInstaLinks a {
-  display: block;
-  margin-top: 10px;
-  color: #9B30FF;  /* Roxo mais vibrante */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-#extraInstaLinks a:hover {
-  color: #b466fd;  /* Verde limão mais vibrante */
-}
-
-#extraspotifyLinks a {
-  display: block;
-  margin-top: 10px;
-  color: #9B30FF;  /* Roxo mais vibrante */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-#extraspotifyLinks a:hover {
-  color: #b466fd;  /* Verde limão mais vibrante */
-}
-
-#extraRedeSocialLinks a {
-  display: block;
-  margin-top: 1px;
-  color: #9B30FF;  /* Roxo mais vibrante */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  margin-bottom: 10px;
   background-color: #17181d;
-  padding: 10px;
-  border-radius: 20px;
+  padding: 7px;
+  border-radius: 40px;
 }
 
-#extraRedeSocialLinks a:hover {
-  color: #b466fd;  /* Verde limão mais vibrante */
+#extraYoutubeLinks a:hover, #extraInstaLinks a:hover, #extraspotifyLinks a:hover, #extraRedeSocialLinks a:hover {
+  color: #C0191F; /* Vermelho escuro */
 }
 
 .social-media, .whatsapp-button {
@@ -290,9 +258,9 @@ body {
 .social-media {
   margin-top: 30px;
   padding: 15px;
-  background-color: #292c35;
+  background-color: #282F32; /* Cinza profundo */
   border-radius: 40px;
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #E51E18; /* Vermelho vibrante */
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -304,8 +272,8 @@ body {
   display: inline-block;
 }
 
-.social-media:hover{
-  box-shadow: 0px 0px 8px #9B30FF;  /* Roxo mais vibrante */
+.social-media:hover {
+  box-shadow: 0px 0px 8px #E51E18; /* Vermelho vibrante */
   transform: scale(1.05);
 }
 
@@ -323,10 +291,10 @@ body {
 }
 
 .modal-content {
-  background-color: #292c35;
+  background-color: #282F32; /* Cinza profundo */
   padding: 20px;
   border-radius: 10px;
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #C0191F; /* Vermelho vibrante */
   width: 80%;
   max-width: 400px;
   text-align: center;
@@ -339,7 +307,7 @@ body {
   right: 15px;
   font-size: 24px;
   cursor: pointer;
-  color: #9B30FF;  /* Roxo mais vibrante */
+  color: #E51E18; /* Vermelho vibrante */
 }
 
 .central-logo-container {
@@ -350,30 +318,29 @@ body {
 }
 
 .central-logo {
-  width: 90px; 
-
+  width: 90px;
 }
 
 @media (max-width: 600px) {
   .artist-list {
-      gap: 8px;
+    gap: 8px;
   }
 
   .artist-list li a {
-      padding: 20px 15px;
-      text-align: center;
-      justify-content: center;
+    padding: 20px 15px;
+    text-align: center;
+    justify-content: center;
   }
 
   .background-image {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      max-width: 600px;
-      z-index: -1;
-      opacity: 0.3;
-      display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    z-index: -1;
+    opacity: 0.3;
+    display: block;
   }
 }
