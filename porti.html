@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Rick maximo</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="container">
+
+    <a href="index.html" class="button voltar">Voltar</a>
+
+    <!-- Botão de Redes Sociais -->
+    <div class="social-media-container">
+      <div class="social-media" onclick="openSocialMediaModal()">Social Midia</div>
+    </div>
+
+    <!-- Modal de Social Media -->
+    <div id="socialMediaModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" onclick="closeSocialMediaModal()">&times;</span>
+        <h2>Redes Sociais</h2>
+        <div id="extraRedeSocialLinks">
+          <a href="https://www.instagram.com/rickmaximoss?igsh=MTBsMW0wMGFkMWRlaA==" target="_blank">
+            <i class="bi bi-instagram"> Instagram</i>
+          </a>
+          <a href="https://youtu.be/9fSCmPW93Ow?si=QelV2z6l_ZcYZtyg" target="_blank">
+            <i class="bi bi-youtube"> YouTube</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão de WhatsApp -->
+    <div class="whatsapp-button">
+      <a href="https://wa.me/5511949757444" target="_blank" class="button">
+        Contratar pelo WhatsApp
+      </a>
+    </div>
+
+    <h1>Portfólio do Artista</h1>
+    
+    <div class="gallery">
+      <img src="./src/image/imagem1.jpg" alt="Imagem 1" onclick="openModal(this.src)">
+      <img src="./src/image/imagem2.jpg" alt="Imagem 2" onclick="openModal(this.src)">
+      <img src="./src/image/imagem3.jpg" alt="Imagem 3" onclick="openModal(this.src)">
+      <img src="./src/image/imagem4.jpg" alt="Imagem 4" onclick="openModal(this.src)">
+      <img src="./src/image/imagem5.jpg" alt="Imagem 5" onclick="openModal(this.src)">
+      <img src="./src/image/imagem6.jpg" alt="Imagem 6" onclick="openModal(this.src)">
+    </div>
+
+    <!-- Modal de Imagem -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+  </div>
+
+  <script src="./src/script.js"></script>
+</body>
+</html>
