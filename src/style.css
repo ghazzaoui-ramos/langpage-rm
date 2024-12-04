@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #17181d; 
+  background: #17181d;
   color: #4D474F; /* Cinza escuro */
   margin: 0;
   display: flex;
@@ -57,12 +57,13 @@ body {
 }
 
 .buttons {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.titulo-port{
+.titulo-port {
   color: #aba8a8;
 }
+
 #meuIcone {
   color: #E51E18; /* Vermelho vibrante */
   font-size: 15px;
@@ -74,7 +75,7 @@ body {
 }
 
 .button {
-  flex: 1; 
+  flex: 1;
   padding: 15px;
   background-color: #282F32; /* Cinza profundo */
   border-radius: 50px;
@@ -85,17 +86,19 @@ body {
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
+  display: block;
 }
 
 .button:hover {
   box-shadow: 0px 0px 8px #E51E18; /* Vermelho vibrante */
   transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .button.voltar {
-  position: absolute; 
-  top: 30px; 
-  left: 20px; 
+  position: absolute;
+  top: 30px;
+  left: 20px;
   padding: 10px 20px;
   background-color: #E51E18; /* Vermelho vibrante */
   color: #000;
@@ -103,6 +106,7 @@ body {
   text-align: center;
   border-radius: 40px;
   cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .button.voltar:hover {
@@ -132,8 +136,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  height: 100%; 
-  object-fit: cover; 
+  height: 100%;
+  object-fit: cover;
   max-width: 600px;
   z-index: -1;
   opacity: 0.3;
@@ -147,7 +151,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center; 
+  align-items: center;
 }
 
 .artist-list li {
@@ -199,22 +203,22 @@ body {
 }
 
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgba(0, 0, 0, 0.9); 
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%; 
-  max-width: 700px; 
+  width: 80%;
+  max-width: 700px;
   border-radius: 15px;
   margin-top: 55px;
 }
@@ -252,7 +256,7 @@ body {
 }
 
 .social-media, .whatsapp-button {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .social-media {
@@ -267,9 +271,9 @@ body {
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
-  margin-bottom: 25px;
   width: 50%;
   display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .social-media:hover {
@@ -278,13 +282,13 @@ body {
 }
 
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -332,7 +336,9 @@ body {
     justify-content: center;
   }
 
+  /* Ativar a imagem de fundo quando a tela for menor */
   .background-image {
+    display: block;
     position: absolute;
     top: 0;
     left: 50%;
@@ -341,6 +347,11 @@ body {
     max-width: 600px;
     z-index: -1;
     opacity: 0.3;
-    display: block;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
